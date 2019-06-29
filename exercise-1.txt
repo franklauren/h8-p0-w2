@@ -1,0 +1,45 @@
+1.Newton Second Law
+STORE "massa=40"
+STORE "percepatan=2"
+STORE "gaya" without value
+
+CALCULATE gaya=massa*percepatan
+DISPLAY gaya
+
+---------------------------------------------
+2.Tahun Kabisat
+STORE "tahun" with any value
+
+IF "tahun % 4= 0 && tahun % 100 > 0"
+DISPLAY "tahun kabisat"
+ELSEIF "tahun % 4 = 0 && tahun % 100 = 0 && tahun % 400 =0
+DISPLAY "tahun kabisat"
+ELSE 
+DISPLAY "bukan"
+
+--------------------------------------------------
+3.Laundry Day
+STORE pakaian to 1
+ 
+WHILE pakaian < 21
+DISPLAY pakaian
+ADD pakaian + 1
+
+IF pakaian = 20
+DISPLAY "mesin cuci menyala"
+
+--------------------------------------------------- 
+4.Periksa Kuku
+STORE "count" to 40
+STORE "nail_length"
+
+WHILE "count" <41
+DISPLAY "count" and "nail_length"
+IF "nail_length" <= 1
+DISPLAY "praise"
+ELSE
+DISPLAY "punished"
+
+
+
+ 
