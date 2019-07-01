@@ -1,46 +1,45 @@
 1.Newton Second Law
-STORE "massa" to "40"
-STORE "percepatan" to "2"
-STORE "gaya" without value
+STORE "mass" to "40"
+STORE "acceleration" to "2"
+STORE "force" without value
 
-CALCULATE gaya=massa*percepatan
-DISPLAY gaya
+CALCULATE force=mass*acceleration
+DISPLAY force
 
 ---------------------------------------------
 2.Tahun Kabisat
-INPUT "tahun" with any value
+INPUT "year" with any value
 
-IF "tahun mod 4 = 0 THEN tahun mod 100 BIGGER THAN 0"
-DISPLAY "tahun kabisat"
+IF "year mod 4 = 0 AND "year mod 100 NOT 0"
+DISPLAY "leap year"
 OR
-ELSEIF "tahun mod 4 = 0 
-THEN tahun mod 100 = 0 
-THEN tahun mod 400 =0
-DISPLAY "tahun kabisat"
+ELSEIF "year mod 4 = 0 
+AND year mod 100 = 0 
+AND year mod 400 =0
+DISPLAY "leap year"
 ELSE 
-DISPLAY "bukan tahun kabisat"
+DISPLAY "not leap year"
 END IF
 
 --------------------------------------------------
 3.Laundry Day
-STORE pakaian TO 1
+STORE cloth
  
-WHILE pakaian LESS THAN 21
-DISPLAY pakaian
-INCREMENT pakaian + 1
+COUNT cloth UNTIL 20
+DISPLAY cloth
 
 IF pakaian = 20
-DISPLAY "mesin cuci menyala"
+DISPLAY "Washmachine Turn ON"
 
 --------------------------------------------------- 
 4.Periksa Kuku
-STORE "jumlah_siswa" to 1
-STORE "siswa"
+STORE "student_count"
+STORE "student"
 STORE "nail_length" 
 STORE "normal_length"
 
-DISPLAY "siswa" and "nail_length"
-UNTIL "jumlah_siswa" TO 40
+DISPLAY "student" and "nail_length"
+COUNT "student_count" UNTIL 40
 
 IF "nail_length" SAME AS "normal_length"
 DISPLAY "praise"
