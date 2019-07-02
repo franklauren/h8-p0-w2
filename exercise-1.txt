@@ -1,52 +1,45 @@
 1.Newton Second Law
-STORE "mass" to "40"
-STORE "acceleration" to "2"
-STORE "force" without value
+STORE 'mass' to '600'
+STORE 'acceleration' to '2'
+STORE 'force' without value
 
 CALCULATE force=mass*acceleration
-DISPLAY "force"
+    DISPLAY 'force'
 
 ---------------------------------------------
 2.Tahun Kabisat
-INPUT "year" with any value
+INPUT 'year' with any value
 
-IF "year mod 4 = 0 AND "year mod 100 NOT 0"
-DISPLAY "leap year"
-OR
-ELSEIF "year mod 4 = 0 
-AND year mod 100 = 0 
-AND year mod 400 =0
-DISPLAY "leap year"
+IF 'year' mod 4 == 0 AND 'year' mod 100 !== 0
+    DISPLAY "leap year"
+ELSEIF 'year' mod 4 == 0 
+ AND 'year' mod 100 == 0 
+ AND 'year' mod 400 == 0
+    DISPLAY "leap year"
 ELSE 
-DISPLAY "not leap year"
+    DISPLAY "not leap year"
 END IF
 
 --------------------------------------------------
 3.Laundry Day
-STORE "cloth"
- 
-COUNT cloth UNTIL 20
-DISPLAY "cloth"
-
-IF pakaian = 20
-DISPLAY "Washmachine Turn ON"
-
+WHILE 'cloth_inside' <= '20'
+    DISPLAY 'cloth_inside'
+    IF 'cloth_inside' IS '20'
+        DISPLAY "Washmachine Turn ON"
+    END IF
+INCREMENT 'cloth_inside' by 1
+END WHILE
 --------------------------------------------------- 
 4.Periksa Kuku
-STORE "student_count"
-STORE "student"
-STORE "nail_length" 
-STORE "normal_length"
+WHILE 'student_count' UNTIL 40
+    IF 'student' OF 'student_count' WITH 'nail_length'  SAME AS 'normal_length'
+        DISPLAY "praise"
+    ELSE
+        DISPLAY "punished"
+    ENDIF
+INCREMENT 'student_count' by 1
+ENDWHILE
 
-INPUT for every "student" and their "nail_length" 
-
-COUNT "student_count" UNTIL 40
-CHECK for every "student"
-IF "nail_length" SAME AS "normal_length"
-DISPLAY "praise"
-ELSE
-DISPLAY "punished"
-ENDIF
 
 
 
