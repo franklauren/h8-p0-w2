@@ -4,7 +4,7 @@ STORE "acceleration" to "2"
 STORE "force" without value
 
 CALCULATE force=mass*acceleration
-DISPLAY force
+DISPLAY "force"
 
 ---------------------------------------------
 2.Tahun Kabisat
@@ -23,10 +23,10 @@ END IF
 
 --------------------------------------------------
 3.Laundry Day
-STORE cloth
+STORE "cloth"
  
 COUNT cloth UNTIL 20
-DISPLAY cloth
+DISPLAY "cloth"
 
 IF pakaian = 20
 DISPLAY "Washmachine Turn ON"
@@ -38,9 +38,10 @@ STORE "student"
 STORE "nail_length" 
 STORE "normal_length"
 
-DISPLAY "student" and "nail_length"
-COUNT "student_count" UNTIL 40
+INPUT for every "student" and their "nail_length" 
 
+COUNT "student_count" UNTIL 40
+CHECK for every "student"
 IF "nail_length" SAME AS "normal_length"
 DISPLAY "praise"
 ELSE
