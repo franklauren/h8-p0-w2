@@ -8,13 +8,13 @@ CALCULATE force=mass*acceleration
 
 ---------------------------------------------
 2.Tahun Kabisat
-INPUT 'year' with any value
+INPUT `year` with any value
 
-IF 'year' mod 4 == 0 AND 'year' mod 100 !== 0
+IF ``year`` mod 4 === 0 AND ``year`` mod 100 !=== 0
     DISPLAY "leap year"
-ELSEIF 'year' mod 4 == 0 
- AND 'year' mod 100 == 0 
- AND 'year' mod 400 == 0
+ELSEIF ``year`` mod 4 === 0 
+ AND ``year`` mod 100 === 0 
+ AND ``year`` mod 400 === 0
     DISPLAY "leap year"
 ELSE 
     DISPLAY "not leap year"
