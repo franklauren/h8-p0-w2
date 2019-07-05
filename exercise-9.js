@@ -4,11 +4,10 @@
  BUATLAH KODE FUNCTION DISINI
 */
 function shoutOut() {
-    console.log("Hallo Function!");
-  }
-  
-  console.log(shoutOut()) // Menampilkan "Halo Function!" di console
+  return "Hallo Function!";
+}
 
+console.log(shoutOut()); // Menampilkan "Halo Function!" di console
 
 //Tugas 2
 /*
@@ -30,7 +29,7 @@ function calculateMultiply(num1,num2) {
  BUATLAH KODE FUNCTION DISINI
 */
 function processSentence(name,age,adress,hobby) {
-    console.log("Nama saya " + name +", umur saya "+age+" tahun, alamat saya di "+address+", dan saya punya hobby yaitu "+hobby+"!");
+  return "Nama saya " + name +", umur saya "+age+" tahun, alamat saya di "+address+", dan saya punya hobby yaitu "+hobby+"!";
 }
 
 var name = "Agus";
