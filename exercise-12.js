@@ -6,7 +6,7 @@ function konversiMenit(menit) {
   if (menit_baru<10){
     menit_baru='0'+menit_baru;
   }
-  console.log(parseInt(jam)+':'+menit_baru);
+  return parseInt(jam)+':'+menit_baru;
 }
 
 // TEST CASES
